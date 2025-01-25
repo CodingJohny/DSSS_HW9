@@ -72,7 +72,7 @@ async def bot_reply(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 
 def main() -> None:
     """Start the bot."""
-    application = Application.builder().token("7624313028:AAFAH2LKGGMHwdm2fSaaq3vNluzqdKOXL4k").build()
+    application = Application.builder().token("TOKEN_HERE").build()
 
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("help", help_command))
